@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        h1{
+            background-color: rgb(0, 112, 34);
+            color: white;
+            font-family: sans-serif;
+        }
+
+        h2{
+            text-transform: uppercase;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1><marquee>Exercicios com JS</marquee></h1>
+    <h2>Resolva</h2>
+    
+    <script>
+        // Exe (A)
+        var dez = Number.parseInt(10)
+        var tres = Number.parseInt(3)
+        var resultado = dez * tres
+
+        document.write("<b>A) Quanto é 10*3</b> <br>R: " +resultado)
+
+        // Exe (B)
+        var doze = Number.parseInt(12)
+        var cinco = Number.parseInt(5)
+        var resultadob = doze + cinco
+
+        document.write("<br><br><b>B) Quanto é 12+5</b> <br>R:" +resultadob)
+
+        // Exe (C)
+        var cinco = Number.parseInt(5)
+        var nove = Number.parseInt(9)
+        var dois = Number.parseInt(2)
+        var resultadoc = cinco - nove * dois
+
+        document.write("<br><br><b>C) Quanto é 5-(9*2)</b> <br>R: " +resultadoc)
+
+        // Exe (D)
+        var treze = Number.parseInt(13)
+        var tress = Number.parseInt(3)
+        var quatro = Number.parseInt(4)
+        var doiss = Number.parseInt(2)
+        var resultadod = (tress + quatro) / doiss * treze
+
+        document.write("<br><br><b>D) Quanto é soma * ((3+4)/2)</b> <br>R: " +resultadod)
+
+        // Exe (E)
+        var peso = Number.parseFloat(window.prompt("Digite seu peso"));
+        var altura = Number.parseFloat(window.prompt("Digite sua altura"));
+        var resultadoe = (altura * altura) / peso 
+
+        document.write("<br><br><b>E) Seu IMC é</b> <br>R: " +resultadoe)
+
+         // Exe (F)
+        var mercadoria = Number(window.prompt("Qual o valor da mercadoria?"));
+        var porcentagem = Number(window.prompt("Digite porcentagem de lucro?"));
+        var resultadof = mercadoria * porcentagem/100
+
+        document.write("<br><br><b>F) Quanto é o seu lucro</b>  <br>R: " +resultadof.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}))
+    </script>
+</body>
+</html>

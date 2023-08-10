@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" href="#">
+    <link rel="StyleSheet" type="text/css" href="CSS/estilo.css">
+        <style>
+            #formulario {
+                box-shadow: 4px 4px 7px 5px rgb(68, 68, 68);
+                border: solid 1px silver ;
+                border-radius: 5px;
+                padding: 10px 10px 0px 20px;
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                font-family: sans-serif;
+                width: 900px;
+            }
+
+            #tabela {
+                background-color: rgb(255, 255, 255);
+                box-shadow: 4px 4px 7px 5px rgb(68, 68, 68);
+                border-radius: 5px;
+                border: solid 1px;
+                box-shadow: 2px 2px 5px 2px silver;
+                width: 900px;
+            }
+
+            h3{
+                margin: 10px;
+            }
+
+            #th {
+                background-color: green;
+                color: white;
+                padding-left: 10px;
+                
+            }
+
+            table {
+                height: 100%;
+                width: 100%;
+            }
+
+            .button {
+                border: solid 1px white;
+                border-radius: 4px;
+                background-color: green;
+                color: rgb(255, 255, 255);
+                font-family: sans-serif;
+                text-transform: uppercase;
+            }
+
+        </style>
+</head>
+
+<body>
+    <h1><marquee>Aula 03</marquee></h1>
+        <div id="formulario">
+            <form autocomplete="off" >
+                <h2>Cadastro de notas</h2>
+                <label for="nome" id="box1"><b>Nome completo:</b></label>
+                <input required type="text" id="nome" class="cxi">
+
+                <label for="Série" id="box1"><b>Série:</b></label>
+                <input required type="text" id="serie" >
+
+                <label for="materias"><b>Matéria:</b></label>
+                <select id="materia" name="materias">
+                    <option selected disabled hidden>Selecione...</option>
+                    <option>Português</option>
+                    <option>Matemática</option>
+                    <option>Ciência</option>
+                    <option>Geografia</option>
+                </select>
+
+                <p>
+                    <label for="bimestre"><b>Bimestre 1</b></label>
+                    <input type="number" id="bimestre1" name="bimestre 1" class="cxbimestre">
+
+
+                    <label for="bimestre"><b>Bimestre 2</b></label>
+                    <input type="number" id="bimestre2" name="bimestre 1" class="cxbimestre">
+
+                    <label for="bimestre"><b>Bimestre 3</b></label>
+                    <input type="number" id="bimestre3" name="bimestre 1" class="cxbimestre">
+
+                    <label for="bimestre"><b>Bimestre 4</b></label>
+                    <input type="number" id="bimestre4" name="bimestre 1" class="cxbimestre">
+
+                    <label for="media"><b>Media</b></label>
+                    <input type="number" id="media" name="bimestre 1" class="cxbimestre">
+
+                    <button id="bt" class="button" onclick="calcular()">Calcular</button>
+                </p>
+        </div>
+
+    <br>
+
+    <div id="tabela">
+        <table border="1">
+            <thead>
+                <h3>Relatório</h3>
+                <tr id="th">
+                    <th>Nome completo</th>
+                    <th>Série</th>
+                    <th>Matéria</th>
+                    <th>B1</th>
+                    <th>B2</th>
+                    <th>B3</th>
+                    <th>B4</th>
+                    <th>Média</th>
+                </tr>
+                <tr>
+                    <th id="nomef"></th>
+                    <th id="serief"></th>
+                    <th id="materiaf"></th>
+                    <th id="bimestref"></th>
+                    <th id="bimestreff"></th>
+                    <th id="bimestrefff"></th>
+                    <th id="bimestreffff"></th>
+                    <th id="mediaf"></th>
+                </tr>
+        </table>
+        <script type="text/javascript" src="JS/cad.js"></script>
+</body>
+
+</html>

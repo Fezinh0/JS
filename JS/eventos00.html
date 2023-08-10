@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="#">
+    <link rel="StyleSheet" type="text/css" href="#">
+    <style>
+        div#area{
+            font: normal;
+            background-color: blueviolet;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="area" onclick="clicar('')" onmouseout="sair('')" onmouseenter="entrar('')">
+        Interaja...
+    </div>
+
+    <script>
+     /* Não altera*/   var uma = 1
+     /*Não altera*/   let dois = 2
+     /*Valor não deve ser alterado*/   const tres = 3
+
+    let a = window.document.getElementById('area')
+
+    function clicar(){
+        a.innerText = 'Suave?'
+        a.style.backgroundColor = 'silver'
+        a.style.color = 'black'
+        a.style.fontWeight = 'bold'
+    }
+
+    function entrar(){
+        a.innerHTML = 'Entrou!'
+        a.style.fontFamily = 'courier new'
+        a.style.backgroundColor = 'blue'
+    }
+
+    function sair(){
+        a.innerHTML = 'Saiu!'
+        a.style.backgroundColor = 'green'
+    }
+    </script>
+</body>
+</html>

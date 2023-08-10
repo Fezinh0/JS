@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D</title>
+</head>
+<body>
+    <h1>Acende a Lâmpada</h1>
+    <p><img id="acender" onclick="quebrar('') " onmouseout= "acendeu('')" onmouseenter="apagou('') " src="imagens/apagada.jpeg"></p>
+
+<script>
+let a = window.document.getElementById('acender')
+    
+function apagou(){
+        a.src = 'imagens/luz.jpeg'
+    }
+
+function acendeu(){
+    a.src = 'imagens/apagada.jpeg'
+}
+
+function quebrar(){
+    a.src = 'imagens/quebrada.jpg'
+}
+
+
+// let a = window.document.getElementById('area')
+// a.addEventListener('click', clicar) para deixar o html mais limpo e o codigo
+// mais clean, o processo ocorre somente no JS.
+</script>
+
+</body>
+</html>

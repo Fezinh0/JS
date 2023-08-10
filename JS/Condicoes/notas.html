@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Condicional</title>
+    <style>
+        #resultado{
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Estrutura Condicional</h1>
+        <p id="resultado"></p>
+        <p id="resultado2"></p>
+    </div>
+    <script>
+    
+        let nota1 = parseFloat(prompt("Nota P1:"))
+        let nota2 = parseFloat(prompt("Nota P2:"))
+        let median = (nota1 + nota2) /2
+        
+        console.log("A primeira nota é: " +nota1+ ", A segunda nota é: " +nota2+ ", A média das notas é:  " + median.toFixed(2))
+
+        /* Se a média for maior ou igual a 7 aluno aprovado. caso contrario sera reprovado*/
+        
+        
+        let p1 = parseFloat(prompt("A primeira nota é: "))
+        let p2 = parseFloat(prompt("A segunda nota é:"))
+        let mediap = (p1 + p2)/2
+
+        if (mediap >= 7){
+            console.log("Você passou")
+            document.getElementById('resultado').innerHTML = "Você passou!"
+        } else {
+            (mediap < 7)
+            console.log("Você reprovou")
+            document.getElementById('resultado').innerHTML = "Você reprovou!"
+        }
+        
+       // console.log("\n")
+       // console.log("ENCADEADA:")
+
+        // Se a média for menor que 3, o desempenho será péssimo. se a média for menor que 5, o desempenho sera ruim, Se a média for maior que 7 o desempenho sera regular, 
+        //Se a média for maior que 9 o desempenho sera bom, Se a média for igual a 10 o desempenho sera ótimo.  
+        
+
+        let d1 = parseFloat(prompt(" Digite sua primeira nota é: "))
+        let d2 = parseFloat(prompt("Digite sua segunda nota é:"))
+        let mediad = (d1 + d2) /2
+
+        if(mediad < 3){
+            console.log("Seu desempenho é péssimo")
+            document.getElementById('resultado2').innerHTML = "Seu desempenho é péssimo"
+        } else if(mediad < 5){
+            console.log("Seu desempenho é ruim")
+            document.getElementById('resultado2').innerHTML = "Seu desempenho é ruim"
+        } else if(mediad < 7){
+            console.log("Seu desempenho é regular")
+            document.getElementById('resultado2').innerHTML = "Seu desempenho é regular"
+        }else if(mediad < 9){
+            console.log("Seu desempenho é bom")
+            document.getElementById('resultado2').innerHTML = "Seu desempenho é bom"
+        } else{
+            console.log("Seu desempenho é ótimo")
+            document.getElementById('resultado2').innerHTML = "Seu desempenho é otimo "
+        }
+    
+    </script>
+</body>
+</html>

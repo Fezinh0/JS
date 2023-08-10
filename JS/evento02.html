@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo imc</title>
+    <link rel="icon" href="#">
+    <link rel="StyleSheet" type="text/css" href="#">
+    <style>
+
+        body{
+            font: normal 18pt sans-serif;
+        }   
+
+        h1{
+            text-align: center;
+            background-color: green;
+            color: white;
+        }
+
+        #card{
+            width: 400px;
+            background-color: silver;
+            color: black;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: rgb(0, 0, 0) 1px 1px 5px;
+        }
+
+        #altura{
+            border-radius: 5px;
+        }
+        
+        #peso{
+            border-radius: 5px;
+        }
+        
+        #butRes{
+            padding: 10px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            font-family: sans-serif;
+            border: solid 2px;
+            background-color: black;
+            color: white;
+            margin: 50px;
+        }
+
+       #butRes:hover{
+        background-color: white;
+        color: black;
+       }
+    </style>
+</head>
+<body>
+    <h1><marquee>Calculando IMC</marquee></h1>
+
+    <div id="card">
+        <h2>Calculadora IMC</h2>
+        <p>
+            <label>Qual sua altura ?</label>
+            <input type="text" name="altura" id="altura" placeholder="Exe: 1.60">
+        </p>
+
+        <p>
+            <label>Qual seu peso ?</label>
+            <input type="text" name="peso" id="peso">
+        </p>
+
+        <p>
+            <input type="button" value="calcular" id="butRes" onclick="calcular()">
+        </p>
+        <P>
+            <p id="resultado">Resultado:</p>
+        </P>
+    </div>
+
+    <script>
+        let bot = window.document.getElementById('butRes')
+        bot.addEventListener('click', calcular)
+
+
+        function calcular(){
+        let peso = window.document.getElementById('peso')
+        let altura = window.document.querySelector('input#altura')
+        let resultado = window.document.getElementById('resultado')
+        let n1 = Number(altura.value)
+        let n2 = Number(peso.value)
+        let imc = n2 / (n1*n1) 
+
+        resultado.innerHTML = `Sua altura é: ${n1.toFixed(2)} e seu peso é: ${n2}, logo seu imc é de: ${imc.toFixed(2)}` 
+        }
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

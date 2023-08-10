@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        .fundoazul{
+            background-color: blue;
+        }
+
+        #pr{
+            color: white;
+        }
+        .fundoverde{
+            background-color: green;
+        }
+
+        .fundolaranja{
+            background-color: orange;
+        }
+
+        #texto {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        #cx1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(4, 163, 255);
+            color: rgb(0, 0, 0);
+            text-align: center; 
+            border-radius: 15px;
+            border: solid 2px;
+            border-color: black;           
+        }
+
+        #cx2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(34, 214, 34);
+            color: rgb(0, 0, 0);
+            text-align: center;        
+            border-radius: 15px;   
+            border: solid 2px;
+            border-color: black;   
+        }
+
+        #cx3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(253, 183, 52);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 15px;
+            border: solid 2px;
+            border-color: black;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolhendo a cor e exibindo o seu significado</h1>
+    
+        
+         <button id="cx1" class="fundoazul" onclick="clicar()">Azul</button></p>
+         <button id="cx2" class="fundoverde" onclick="corv()">Verde</button></p>
+         <button id="cx3" class="fundolaranja" onclick="corl()">Laranja</button></p>
+        <p id="texto"></p>
+        
+        <script>
+           let azult = window.document.getElementById('texto')
+           let verdet = window.document.getElementById('texto')
+           let oranget = window.document.getElementById('texto')
+
+
+        function clicar(){
+            document.body.classList.add('fundoazul')
+            document.body.classList.remove('fundoverde', 'fundolaranja')
+            azult.textContent = "Azul significa harmonia e maturidade."
+
+        }
+
+        function corv(){
+            document.body.classList.add('fundoverde')
+            document.body.classList.remove('fundoazul', 'fundolaranja')
+            verdet.textContent = "Verde significa saúde."
+        }
+            
+        function corl(){
+            document.body.classList.add('fundolaranja')
+            document.body.classList.remove('fundoazul', 'fundoverde')
+            oranget.textContent = "laranja significa força."
+        }
+            
+            
+
+
+
+        </script>
+</body>
+</html>
